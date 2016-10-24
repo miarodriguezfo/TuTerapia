@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "561031865872",
+    "firebase_url": "https://tuterapia-8d0eb.firebaseio.com",
+    "project_id": "tuterapia-8d0eb",
+    "storage_bucket": "tuterapia-8d0eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561031865872:android:b307b1ba29736c1d",
+        "android_client_info": {
+          "package_name": "com.miarodriguezfo.tuterapia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561031865872-ct45ds9o885mp8flq01b7mj02p0nf312.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miarodriguezfo.tuterapia",
+            "certificate_hash": "AADD2E7BCF32C547234B72C1043C3B24F0510D82"
+          }
+        },
+        {
+          "client_id": "561031865872-6kaithiqi6vmea81kdbrsnbsnfpkol3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGJsRbjtxSRPyj7x2WAo5QQhFErnyeAj8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561031865872-6kaithiqi6vmea81kdbrsnbsnfpkol3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

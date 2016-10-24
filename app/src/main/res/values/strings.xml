@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TuTerapia</string>
+    <string name="facebook_app_id">190437511367651</string>
+    <string name="cancel_login">Se canceló la operación</string>
+    <string name="error_login">Ocurrió un error al ingresar</string>
+    <string name="firebase_error_login">Error al iniciar sesión en Firebase</string>
+    <string name="title_activity_main">MainPatientActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="logoutt">Cerrar sesión</string>
+    <string name="facebookLogin">"INICIAR SESION CON FACEBOOK"</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">"Cancelar"</string>
+    <string name="home_item">Home</string>
+    <string name="telefonoHint">Telefono</string>
+    <string name="paciente">Paciente</string>
+    <string name="doctor">Doctor</string>
+    <string name="add_patient">Desea agregar este paciente a tu lista?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="senderid">12123</string>
+    <string name="no_doctor_message">No tienes un doctor asignado. \n Solicita a tu doctor que te agrege a su lista de pacientes. </string>
+    <string name="solicitudes_pendientes">Tienes una solicitud pendiente</string>
+    <string name="acept_doctor">Deseas aceptar la solicitud del doctor:</string>
+
+</resources>
