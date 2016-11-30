@@ -21,5 +21,26 @@
     <string name="no_doctor_message">No tienes un doctor asignado. \n Solicita a tu doctor que te agrege a su lista de pacientes. </string>
     <string name="solicitudes_pendientes">Tienes una solicitud pendiente</string>
     <string name="acept_doctor">Deseas aceptar la solicitud del doctor:</string>
+    <string name="nombre_del_ejercicio">Nombre del ejercicio</string>
+    <string name="parte">Parte</string>
+    <string name="categoria">Categoria</string>
+    <string name="equipamento">Equipamento</string>
+    <string name="descripci_n">Descripción</string>
+    <string name="unlink_patient">Desea desvincular al paciente</string>
+    <string name="sesiones">Sesiones</string>
+    <string name="Fecha">Fecha</string>
+    <string name="Hora">Hora</string>
+    <string name="Comentarios">Comentarios</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="agrega_especificaciones_al_ejercicio">Agrega especificaciones al ejercicio</string>
+    <string name="peso">Peso (Lbs)</string>
+    <string name="indicaiones">Indicaciones y Recomendaciones</string>
+    <string name="duracion">Duración (Segundos)</string>
+    <string name="repeticiones">Repeticiones</string>
+    <string name="agregar">Agregar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="Ejercicios">Ejercicios</string>
 
 </resources>

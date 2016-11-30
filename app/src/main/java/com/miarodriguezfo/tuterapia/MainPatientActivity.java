@@ -158,7 +158,7 @@ public class MainPatientActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new TabPatientTerapiasFragment(), "Terapias");
-        adapter.addFragment(new TabPatientTerapiasFragment(), "Historial");
+        adapter.addFragment(new TabPatientHistorialFragment(), "Historial");
         adapter.addFragment(new TabPatientDoctorFragment(), "Mi Doctor");
         viewPager.setAdapter(adapter);
     }

@@ -103,7 +103,7 @@ public class AddPatientActivity extends Activity {
                 return false;
             }
         });
-
+        search.setQuery("",true);
     }
 
     public void addPacient(String name, String email, String photoUrl, String uid){

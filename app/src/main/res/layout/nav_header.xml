@@ -32,7 +32,6 @@
     <!-- Correo de la cuenta -->
     <TextView
         android:id="@+id/email"
-        style="@style/Widget.AppCompat.Spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="juanaperez01@gmail.com"

@@ -34,7 +34,7 @@ public class SplashActivity extends Activity {
         Thread timerThread = new Thread() {
             public void run() {
                 try {
-                    sleep(2000);
+                    sleep(1500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
@@ -62,6 +62,7 @@ public class SplashActivity extends Activity {
         if (user != null) {
             Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
             DatabaseReference userType = FirebaseDatabase.getInstance().getReference("users/"+user.getUid());
+            userType.child("Foto").setValue(user.getPhotoUrl().toString());
             final String[] typeUser = new String[1];
             typeUser[0]="pac";
             userType.child("Tipo").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -71,7 +72,6 @@ public class SplashActivity extends Activity {
                         // TODO: handle the case where the data already exists
                         typeUser[0] =snapshot.getValue(String.class).toString();
                         Intent intent;
-                        System.out.println("miguel angel "+typeUser[0]);
                         switch(typeUser[0]){
                             case "Paciente":
                                 intent = new Intent(app, MainPatientActivity.class);

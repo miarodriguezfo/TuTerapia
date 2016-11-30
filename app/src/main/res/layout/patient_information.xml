@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_image_profile_signup"
+        android:layout_width="@dimen/perfil_image_size"
+        android:layout_height="@dimen/perfil_image_size"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        app:border_color="@android:color/white"
+        app:border_width="1dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18dp"
+        android:id="@+id/nombre"
+        android:textColor="@color/primaryText"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Información Personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/textView"
+        android:textColor="@color/secondaryText"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:textSize="18dp"
+        android:enabled="false"
+        android:id="@+id/correo"
+        android:textColor="@color/primaryText"
+        android:textAlignment="viewStart" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:textSize="18dp"
+        android:hint="@string/telefonoHint"
+        android:id="@+id/telefono"
+        android:inputType="number"
+        android:enabled="false"
+        android:textColor="@color/primaryText" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18dp"
+        android:inputType="number"
+        android:enabled="false"
+        android:textColor="@color/primaryText" />
+</LinearLayout>

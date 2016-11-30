@@ -75,6 +75,13 @@ public class MainDoctorActivity extends AppCompatActivity {
                             switch (menuItem.getItemId()) {
                                 case R.id.nav_log_out:
                                     logout();
+                                    break;
+                                case R.id.nav_pacientes:
+
+                                    break;
+                                case R.id.nav_ejercicios:
+
+                                    break;
                             }
 
 
@@ -152,7 +159,7 @@ public class MainDoctorActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new TabDoctorPacientesFragment(), "Pacientes");
-        adapter.addFragment(new TabPatientTerapiasFragment(), "Ejercicios");
+        adapter.addFragment(new TabDoctorEjerciciosFragment(), "Ejercicios");
         viewPager.setAdapter(adapter);
     }
 }

@@ -3,21 +3,14 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_pacientes"
+            android:icon="@drawable/ic_people_black"
             android:checked="true"
-            android:title="home_item" />
+            android:title="Pacientes" />
         <item
-            android:id="@+id/nav_productos"
-            android:title="productos_item" />
-        <item
-            android:id="@+id/nav_carrito"
-            android:title="compras_item" />
-        <item
-            android:id="@+id/nav_ordenes"
-            android:title="ordenes_item" />
-        <item
-            android:id="@+id/nav_facturas"
-            android:title="facturas_item" />
+            android:id="@+id/nav_ejercicios"
+            android:icon="@drawable/ic_directions_run"
+            android:title="Ejerecicios" />
 
         <!-- Sección de configuración -->
         <item
@@ -28,6 +21,10 @@
                     android:id="@+id/nav_log_out"
                     android:icon="@android:drawable/ic_lock_power_off"
                     android:title="@string/logoutt" />
+                <item
+                    android:id="@+id/nav_info"
+                    android:icon="@drawable/ic_info_outline"
+                    android:title="Acerca de" />
             </menu>
         </item>
     </group>

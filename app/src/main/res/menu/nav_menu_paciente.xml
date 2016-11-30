@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_terapias"
+            android:icon="@drawable/ic_directions_run"
+            android:checked="true"
+            android:title="Terapias" />
+        <item
+            android:id="@+id/nav_historial"
+            android:icon="@drawable/ic_access_time_black"
+            android:title="Historial" />
+        <item
+            android:id="@+id/nav_doctor"
+            android:icon="@drawable/ic_local_hospital_black"
+            android:title="Doctor" />
+
+        <!-- Sección de configuración -->
+        <item
+            android:id="@+id/configuration_section"
+            android:title="Configuración">
+            <menu>
+                <item
+                    android:id="@+id/nav_log_out"
+                    android:icon="@android:drawable/ic_lock_power_off"
+                    android:title="@string/logoutt" />
+                <item
+                    android:id="@+id/nav_info"
+                    android:icon="@drawable/ic_info_outline"
+                    android:title="Acerca de" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

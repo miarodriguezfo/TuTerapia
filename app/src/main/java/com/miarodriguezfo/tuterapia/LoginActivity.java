@@ -158,6 +158,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         if (user != null) {
             Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
             DatabaseReference userType = ref.getReference("users/"+user.getUid());
+            userType.child("Foto").setValue(user.getPhotoUrl().toString());
             final String[] typeUser = new String[1];
             userType.child("Tipo").addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override

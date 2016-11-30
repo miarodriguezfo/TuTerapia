@@ -39,7 +39,6 @@ public class SignUpActivity extends AppCompatActivity implements RadioGroup.OnCh
     private FirebaseAuth firebaseAuth;
     private DatabaseReference usuariosRef;
     private CircleImageView profileImage;
-    private TextView nombre;
     private EditText correo;
     private EditText telefono;
     private FirebaseUser user;
@@ -55,7 +54,7 @@ public class SignUpActivity extends AppCompatActivity implements RadioGroup.OnCh
         ref = FirebaseDatabase.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
         profileImage = (CircleImageView) findViewById(R.id.circle_image_profile_signup);
-        nombre = (TextView) findViewById(R.id.nombre);
+        TextView nombre = (TextView) findViewById(R.id.nombre);
         correo = (EditText) findViewById(R.id.correo);
         telefono = (EditText) findViewById(R.id.telefono);
         telefono.setText("");
@@ -170,7 +169,7 @@ public class SignUpActivity extends AppCompatActivity implements RadioGroup.OnCh
                 usuariosRef.child(user.getUid()).child("Foto").setValue(foto);
                 if (tipoUsuario=="Paciente")
                     usuariosRef.child(user.getUid()).child("Doctor").setValue(" ");
-
+                //ToDo Add clinical History's Data from providern(Age, Gender, Birthdate...)
                 goMainScreen();
             }
             return true;

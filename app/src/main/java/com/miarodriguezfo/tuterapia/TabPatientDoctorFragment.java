@@ -150,7 +150,6 @@ public class TabPatientDoctorFragment extends Fragment {
     }
 
     public void test(){
-        System.out.println("test again");
         Query doc= ref.getReference("users").orderByKey().equalTo(doctorUid);
         doc.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -189,7 +188,6 @@ public class TabPatientDoctorFragment extends Fragment {
     public void aceptarSolicitud(){
         System.out.println("test "+ solicitudID);
         usuarioRef.child("Doctor").setValue(doctorUid);
-        ref.getReference("users/"+doctorUid).child("Pacientes").child(user.getUid()).setValue(true);
         ref.getReference("solicitudes").child(solicitudID).removeValue();
 
     }
